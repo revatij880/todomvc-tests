@@ -109,9 +109,9 @@ Tests can be triggered with a single `npx` command via WebdriverIO.
 WebDriverIO (WDIO) was chosen for this project because it is:
 
 - Easy to Set up and use. WDIO offers an interactive CLI tool that makes project setup and configuration simple and beginner-friendly.
-- Modern JavaScript/TypeScript support. It's built in JavaScript and fits naturally into modern web development stacks.
+- Modern JavaScript/TypeScript support. It's built in JavaScript and fits into modern web development stacks.
 - Cross-Browser testing. WDIO allows automation across multiple browsers like Chrome, Firefox, Edge, and Safari, helping ensure your app behaves consistently for all users.
 - Supports real browsers and headless modes.
-- Plugin-rich ccosystem. WDIO supports a wide range of plugins for reporting, assertions, screenshots, and integration with CI/CD tools.
-- Built-in waits & async/await Support. No need to manually handle timeouts or polling — WDIO has smart waits and supports async/await for cleaner test code.
-- Strong community and documentation. Actively maintained with good documentation and community support to quickly resolve issues and keep the project up to date.
+-  WDIO supports a wide range of plugins for reporting, assertions, screenshots, and integration with CI/CD tools.
+- Built-in waits & async/await Support. WDIO has waits and supports async/await for cleaner test code.
+- Strong community and documentation. Actively maintained with good documentation and has good community support. 
