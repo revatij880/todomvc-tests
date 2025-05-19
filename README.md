@@ -47,7 +47,7 @@ node -v
 npm -v
 ```
 
-### Install Project Dependencies
+### Install project dependencies
 Once Node.js is installed, navigate to the project root and run:
 
 ```bash
@@ -65,7 +65,7 @@ Core configuration like what kind of tests should run, which browsers should the
 You can modify settings like browser capabilities, baseUrl, timeouts, etc., in this file.
 
 ## How to run the tests?
-### 1. Clone this Repo
+### 1. Clone this repo
 ```bash
 git clone https://github.com/revatij880/todomvc-tests.git
 cd todoMVC-tests
