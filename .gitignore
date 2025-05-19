@@ -1,0 +1,57 @@
+# Node dependencies
+node_modules/
+package-lock.json
+
+# Output directories
+allure-report/
+allure-results/
+logs/
+errorShots/
+coverage/
+dist/
+build/
+
+# WebdriverIO cache
+.wdio/
+
+# Environment variables
+.env
+.env.local
+.env.test
+.env.production
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Test logs
+*.log
+
+# BrowserStack or Sauce Labs results (if applicable)
+*.xml
+*.json
+
+# npm debug files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Mac system files
+.AppleDouble
+.LSOverride
+
+# Jest or Mocha snapshots (if used)
+__snapshots__/
+
+# Playwright (if combined testing is used)
+playwright-report/
+
+# Custom screenshots/videos
+screenshots/
+videos/
