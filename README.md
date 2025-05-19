@@ -1,13 +1,87 @@
-# E2E test suite for React ToDoMVC App
+# TodoMVC E2E Test Automation Project
 
-This repository contains an automated test suite and simple framework for validating the todo management scenarios.
+This project is an end-to-end (E2E) test automation suite built using WebdriverIO (WDIO) to validate functionality of the TodoMVC application.
 
 ## Tech stack
-This test automation framework is built using:
+This test automation project is built using:
 - **Javascript** as the programming language
 - **Mocha** as the test framework
 - **WebDriverIO** for browser automation
 
 ## Framework structure
-The framework is structured in a modular way to promote reusability and maintainability. The key components of the framework are:
-- **Pages:** 
+The project follows the [**Page Object Model (POM)**](https://webdriver.io/docs/pageobjects) design pattern and is structured as follows:
+
+```
+TODOMVC-TESTS/
+├── node_modules/              # Node dependencies
+├── test/
+│   ├── pageobjects/           # Page Object classes (shared UI logic and elements used by the spec files)
+│   │   └── todo.page.js
+│   └── specs/                 # Spec files (The actual tests with assertions)
+│       ├── todo.add.e2e.js
+│       ├── todo.complete.e2e.js
+│       ├── todo.delete.e2e.js
+│       ├── todo.filter.e2e.js
+│       ├── todo.navigation.e2e.js
+│       └── todo.update.e2e.js
+├── .gitignore
+├── package.json               # Project configuration and dependencies
+├── package-lock.json
+├── wdio.conf.js               # WDIO configuration file
+└── README.md                  # Project documentation
+```
+
+## Dependencies
+Ensure the following are installed on your machine:
+
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install node
+```
+
+### Windows Users
+- Download and install [Node.js](https://nodejs.org/en/download/) (includes npm).
+- Confirm installation with:
+```bash
+node -v
+npm -v
+```
+
+### Install Project Dependencies
+Once Node.js is installed, navigate to the project root and run:
+
+```bash
+npm install
+```
+
+This installs:
+- WebdriverIO
+- Mocha (test runner)
+- Required WDIO plugins and reporters
+
+## Configuration
+Core configuration like what kind of tests should run, which browsers should the tests run against, what reporting mechanism to you is all set in the `wdio.conf.js` file in the root folder.
+
+You can modify settings like browser capabilities, baseUrl, timeouts, etc., in this file.
+
+## How to run the tests?
+### 1. Clone this Repo
+```bash
+git clone https://github.com/revatij880/todomvc-tests.git
+cd todoMVC-tests
+```
+
+### 2. Install the dependencies
+```bash
+npm install
+```
+
+### 3. Run all tests
+```bash
+npx wdio run ./wdio.conf.js
+```
+
+### 4. Run specific spec file
+```bash
+npx wdio run ./wdio.conf.js --spec ./test/specs/todo.add.e2e.js
+```
